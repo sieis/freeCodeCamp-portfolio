@@ -9,6 +9,7 @@ html, body{
 nav{
     height:max-content;
 }
+
 @media(min-width: 700px){
     #navbar{
         position: sticky;
@@ -35,10 +36,19 @@ nav a{
         display: grid;
         grid-template-columns: auto auto;
     }
+    #main-doc{
+        border-left: solid rgb(207, 171, 157) 2px;
+        padding-left: 1rem;
+    }
+    
 }
-main{
-    border-left: solid rgb(207, 171, 157) 2px;
-    padding-left: 1rem;
+@media(max-width:700px){
+    #main-doc{
+        border-top: solid rgb(207, 171, 157) 2px;
+        border-left: none;
+        padding-left: 1rem;
+    }
+    
 }
 a{
     color: lightcoral;
